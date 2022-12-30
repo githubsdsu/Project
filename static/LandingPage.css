@@ -1,0 +1,131 @@
+body{
+    /* background-color: #5CDB95;  */
+     /* background-color: #16FFBD; */
+    background-image: url(bg1.jpg)
+}
+#logo img{
+    position: absolute;
+    width: 26%;
+    height:13%;
+    /* border: 3px solid green ;  */
+}
+#nav ul {
+    position: fixed;
+    z-index: 9999;
+    left: 27%;
+    width: 71%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: bolder;
+    /* background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea); */
+     /* background-color: #05386B; */
+    /* border: 3px solid green ; */
+    background-color: #00b5a1;
+}
+li {
+    float: right;
+} 
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+li a:hover {
+    background-color: #e98573;
+}
+#text img{
+    text-align: center;
+    position: absolute;
+    width: 70%;
+    height: 11%;
+    left: 15%;
+    top: 15%;
+    /* color: #080808; */  
+    /* border: 3px solid green ;  */
+}
+#gif img{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    width: 83%;
+    height: 50%;
+    /* border-style: ridge;
+    border-width: 5px;
+    border-color: green ;  */
+}
+#login{
+    top: 97%;
+    position: absolute;
+    width: 95%;
+    padding: 1px;
+    align-content: center;
+    /* border: 3px solid green ; */
+}
+#login form{
+    left: 23%;
+    top: 100%;
+    position: absolute;
+    width: 50%;
+    padding: 10px;
+    align-content: center;
+    /* border: 3px solid green ; */
+}
+#login form input[type="text"],#login form input[type="password"]{
+    display: block;
+    text-align: center;
+    outline: none;
+    border-radius: 24px;
+    transition: width 0.4s ease-in-out;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color:#00b5a1;
+    align-content: left;
+    border: 5px solid #00b5a1;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 5px 7px 5px #75849e, -5px -7px 8px #D1D9E6;
+    /* background-image: url('http://cdn.onlinewebfonts.com/svg/img_401900.png');
+    background-position: 10px 10px;  */
+}
+#login form input[type=text]:hover {
+    width: 120%;
+}
+#login form input[type="submit"]{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px;
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+    width: 50%;
+    background-color: #FFFFFF;
+    color: #00b5a1;
+    font-size: 15px;
+    font-weight: bolder;
+    box-shadow: 5px 7px 5px #75849e, -5px -7px 8px #D1D9E6;
+}
+#about {
+    color: #080808;
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    height: 90%;
+    /* border: 3px solid green ; */
+}
+#contact {
+    color: #ffffff;
+    background-color: #00b5a1;
+    position: absolute;
+    top: 300%;
+    width: 100%;
+    height: 50%;
+    font-size: 18px;
+    /* border: 3px solid green ; */
+}

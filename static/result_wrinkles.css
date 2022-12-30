@@ -1,0 +1,73 @@
+/* Write CSS Here */* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    
+    body {
+     /* background-color: #e3e3e3; */
+      background-image: url(https://en.pimg.jp/062/192/209/1/62192209.jpg);
+      
+    }
+
+    #logo img{
+        position: absolute;
+        width: 25%;
+        height:13%;
+         /* border: 3px solid green ;  */
+    }
+
+    .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%px;
+    background-image: url(https://en.pimg.jp/062/192/209/1/62192209.jpg)
+    }
+
+    /* about Start */
+    .about {
+    /* background-image: url(https://en.pimg.jp/062/192/209/1/62192209.jpg) */
+    background-color: #00b5a1;
+    min-height: 300px; 
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    }
+    
+    .about > h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    }
+    
+    .about > img {
+    border: solid 2px;
+    width: 45%;
+    height: 45%;
+    border-radius: 50px;
+    object-fit: cover;
+    }
+    
+    .about > p {
+    font-size: 18px;
+    margin: 10px 200px;
+    padding-bottom: 10px;
+    line-height: 25px;
+    }
+    
+    .about > a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-decoration: none;
+    border: solid rgb(0, 0, 0) 1px;
+    padding: 5px 20px;
+    }
+    
+    .about > a:hover {
+    background-color: #ffffff;
+    border: solid #111111 1px;
+    }
+    /* about End */
+    
+   
+    

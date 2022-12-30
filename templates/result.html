@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{%load static %}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="UTF-8" />
+	
+	<body>
+		<style>
+                
+			body{
+
+				background-image: url("{% static 'bg1.jpg'%}");
+			}
+		
+	</style>
+		<form method="POST" action="/finalresult">
+			{% csrf_token%}
+			<center>
+		    <div id="a">  
+				<style>
+					#a{
+						padding-top: 280px;
+					}
+				</style>
+			<input placeholder="Username" type="text" name="username" 
+                    style="width:270px; height:42px; border: solid 3px #02aa96; 
+                    font-size:16px; padding-left:8px;" required />
+                    </div>
+					<br>
+			<div id="b">		
+			<input type="submit" name="submit" value="Submit" class="btn btn-info">
+			</div>
+		</center>
+		</form>
+	</body>
+
+</head>
+</html>

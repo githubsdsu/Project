@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>Skinalyze</title>
+
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	
+    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<body>
+		<style>
+                
+			body{
+
+				background-image: url("{% static 'bg1.jpg'%}");
+			}
+		
+	</style>
+	<form method="POST" action="signup">
+	<center>
+	{%for message in messages%}
+	<div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+  <h3>Message:  {{message}}</h3>
+{% endfor %}
+</div>
+	
+    <h1>Sign in to Continue</h1>
+	{% csrf_token %}
+	<br>
+	 <div>
+	<input placeholder="Firstname" type="text" name="firstname" 
+	style="width:270px; height:42px; border: solid 1px black; border-width:3px; 
+	font-size:16px; padding-left:8px;"  required />
+	</div>
+    <br>
+	 <div>
+	<input placeholder="Lastname" type="text" name="lastname" 
+	style="width:270px; height:42px; border: solid 1px black; border-width: 3px; 
+	font-size:16px; padding-left:8px;"  required />
+	</div>
+	<br>
+    <div>
+	<input placeholder="Username" type="mail" name="username" 
+	style="width:270px; height:42px; border: solid 1px black; border-width: 3px;; 
+	font-size:16px; padding-left:8px;" required />
+	</div>
+	<br>
+	<div>
+		<input placeholder="Email" type="mail" name="mailbox" 
+		style="width:270px; height:42px; border: solid 1px black; border-width: 3px;; 
+		font-size:16px; padding-left:8px;" required />
+		</div>
+	<br>
+	<div>
+	<input placeholder="Password" type="password" name="password" 
+	style="width:270px; height:42px; border: solid 1px black; border-width: 3px;; 
+	font-size:16px; padding-left:8px;" required />
+	</div>
+	<br>
+	<div>
+	<input placeholder="Re-enter Password" type="password" name="confirmpassword" 
+	style="width:270px; height:42px; border: solid 1px black; border-width: 3px;; 
+	font-size:16px; padding-left:8px;" required />
+	</div>
+	<br>
+	<div><input type="submit" class="btn btn-info" value="Next" /></div>
+	<br>
+	<div><a href="http://127.0.0.1:8000/">Already have an Account</a></div>
+</form>
+</center>
+</body>
+</head>	
+</html>

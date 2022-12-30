@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <title>Skinalyze</title>
+    <head>
+       {%load static%}
+        <meta charset="utf-8">
+       
+    
+         
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <body>
+          <style>
+            body{
+              background-image:url("{% static 'bg1.jpg'%}");
+            }
+            </style>
+            <form method="POST" action="forgot">
+              <center>
+                {%csrf_token%}
+                {%for message in messages%}
+                <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                <h3>Message:  {{message}}</h3>
+                {% endfor %}
+                </div>
+                <h1>Enter Your Details</h1>
+                
+                <br>
+                <div>
+                <input placeholder="Username" type="text" name="username" 
+                style="width:270px; height:42px; border: solid 1px black;border-width:3px; 
+                font-size:16px; padding-left:8px;" required />
+                </div>
+                  <br>
+                <div>
+                <input placeholder="Enter registered Email" type="text" name="mailbox" 
+                style="width:270px; height:42px; border: solid 1px black;border-width:3px; 
+                font-size:16px; padding-left:8px;" required />
+                </div>
+	              <br>
+	              <div><input type="submit" class="btn btn-info"  value="Next" /></div>
+
+               </center>
+              </form>
+              </body>
+
+</head>
+</html>
+                

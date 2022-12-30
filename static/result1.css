@@ -1,0 +1,15 @@
+body{
+    background-image: url(bg1.jpg)
+}
+#submit{
+    background-color: green;
+    border:none;
+    
+    font-size:20px;
+    color:black;
+    border-radius: 12px;
+    
+}
+#a{
+    padding-top:280px;
+}

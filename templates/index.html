@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Skinalyze</title>
+</head>
+<body>
+    <div id="logo">
+        <a href="#">
+            <img  src="logotext-png.png">
+        </a>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="#about">About</a></li>
+            <li><a href="#help">LOGIN</a></li>
+            <li><a href="#text">Home</a></li>
+            
+        </ul>
+    </div>
+    <div id="text">
+        <img src="text.png" alt="">
+    </div>
+    <div id="gif" >
+        <img src="gif.gif" alt="">
+    </div>
+     </div>
+     <div id="help">
+         <br>
+         <br>
+        <div id="box">
+        <form method="POST" action="">
+            {%csrf_token%}
+            <centre>      
+                </div>
+                
+                <h1>Log in to Continue</h1>
+                {% csrf_token %}
+                <br>
+                <div id="uname">
+                <input placeholder="Username" type="text" name="username" 
+                style="width:270px; height:42px; border: solid 1px #c2c4c6; 
+                font-size:16px; padding-left:8px;" required />
+                </div>
+                <br>
+                <div id="psw">
+                    <input placeholder="Password" type="password" name="password" 
+                    style="width:270px; height:42px; border: solid 1px #c2c4c6; 
+                    font-size:16px; padding-left:8px;" required />
+                </div>
+                <br>
+                <div><input type="submit" class="btn btn-info" value="Next" /></div>
+                <br>
+                <div><a href="http://127.0.0.1:8000/forgot">Forgot Password</a></div>
+                <br>
+                <div><a href="http://127.0.0.1:8000/signup">Don't have an account yet?  Sign Up</a></div>
+            </centre>
+            </form>
+        
+    </div> 
+     </div>
+     <div id="about">
+        <h1>About us</h1>
+        <pre><h2>
+
+    We are final year engineering graduate students's from 
+    D. Y. Patil's Ramrao Adik Institute of Technology, Nerul,
+     Navi Mumbai, with a Specialisation in the field of 
+     Electronics and Telecommunication Engineering.
+    This web Application is our final year engineering project created 
+    with an aim of utilising the latest present-day Technology to 
+    screen basic facial skin problems at the home itself.
+    In the future it will also recommend skin care products to the user.
+
+        </h2></pre>
+
+    </div>
+    <div id="contact">
+        <h1>Contact us</h1>
+        <pre><h3>
+
+           You can drop an e-mail for us at:
+
+            Kirtan Shah:                  kri.sha.rt18@rait.ac.in
+            Pratik Vidyanandan:     pra.vid.rt18@rait.ac.in
+            Siddharth Ranjan:        sid.ran.rt18@rait.ac.in
+            Hritik Ubale:                  hri.uba.rt18@rait.ac.in
+        </h3></pre>
+
+    </div>
+</body>
+</html>
